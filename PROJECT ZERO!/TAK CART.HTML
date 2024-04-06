@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAK ELECTRONICS SHOPPING</title>
+    <style>
+        body {
+            background-color: #ffd6d6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h3 {
+            font-style: italic;
+            text-align: center;
+        }
+        .column {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cart">
+        <h1>Our Cart</h1>
+        <table>
+            <tr>
+                <th>Item Name</th>
+                <th>Quantity</th>
+                <th>Item Price</th>
+            </tr>
+            <tr>
+                <td><input type="text" id="itemName" placeholder="Item Name"></td>
+                <td><input type="number" id="quantity" placeholder="Quantity"></td>
+                <td><input type="number" id="itemPrice" placeholder="Item Price"></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="itemName" placeholder="Item Name"></td>
+                <td><input type="number" id="quantity" placeholder="Quantity"></td>
+                <td><input type="number" id="itemPrice" placeholder="Item Price"></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="itemName" placeholder="Item Name"></td>
+                <td><input type="number" id="quantity" placeholder="Quantity"></td>
+                <td><input type="number" id="itemPrice" placeholder="Item Price"></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="itemName" placeholder="Item Name"></td>
+                <td><input type="number" id="quantity" placeholder="Quantity"></td>
+                <td><input type="number" id="itemPrice" placeholder="Item Price"></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="itemName" placeholder="Item Name"></td>
+                <td><input type="number" id="quantity" placeholder="Quantity"></td>
+                <td><input type="number" id="itemPrice" placeholder="Item Price"></td>
+            </tr>
+        </table>
+        <button onclick="calculateTotal()">Calculate Total</button>
+    </div>
+    <script>
+        function calculateTotal() {
+            const quantity = parseFloat(document.getElementById("quantity").value);
+            const itemPrice = parseFloat(document.getElementById("itemPrice").value);
+            const totalPrice = quantity * itemPrice;
+            document.getElementById("totalPrice").value = totalPrice.toFixed(2);
+        }
+    </script>
+    <hr>
+    Author: Tracy Akon Kari<br>
+    © copyright reserved <br>
+    <small><a href="mailto:TAKelectronics@gmail.com">TAKelectronics@gmail.com</a></small>
+</body>
+</html>
+
